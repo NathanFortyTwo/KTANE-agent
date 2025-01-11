@@ -1,16 +1,6 @@
 from enum import Enum
-from solvers.baseSolver import BaseSolver, InvalidInputException, Color
-
-
-class FRButtonText(Enum):
-    CANCEL = "Annuler"
-    EXPLODE = "Exploser"
-    MAINTAIN = "Maintenir"
-
-
-class ButtonActions(Enum):
-    QUICKTAP = "QUICKTAP"
-    MAINTAIN = "MAINTAIN"
+from solvers.baseSolver import BaseSolver
+from constants import Color, InvalidInputException, FRButtonText, ButtonActions
 
 
 class SimpleWire(BaseSolver):

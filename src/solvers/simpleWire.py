@@ -1,7 +1,5 @@
-from solvers.baseSolver import BaseSolver, InvalidInputException, Color
-
-MIN_WIRES = 3
-MAX_WIRES = 6
+from solvers.baseSolver import BaseSolver
+from constants import Color, InvalidInputException, MIN_SIMPLE_WIRES, MAX_SIMPLE_WIRES
 
 
 class SimpleWire(BaseSolver):
@@ -14,9 +12,9 @@ class SimpleWire(BaseSolver):
     def validate_input(self):
         super().validate_input()
 
-        if len(self.input) < MIN_WIRES:
+        if len(self.input) < MIN_SIMPLE_WIRES:
             raise InvalidInputException("Not enough wires")
-        if len(self.input) > MAX_WIRES:
+        if len(self.input) > MAX_SIMPLE_WIRES:
             raise InvalidInputException("Not enough wires")
         for color in self.input:
             if type(color) != Color:

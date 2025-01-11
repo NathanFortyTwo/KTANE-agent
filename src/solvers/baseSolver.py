@@ -1,17 +1,4 @@
-from enum import Enum
-
-
-class InvalidInputException(Exception):
-    """Raise for Invalid input"""
-
-
-class Color(Enum):
-    RED = "RED"
-    YELLOW = "YELLOW"
-    WHITE = "WHITE"
-    BLACK = "BLACK"
-    BLUE = "BLUE"
-
+from constants import InvalidInputException
 
 DEFAULT_BOMB_CONFIG = {
     "series_number": "ABCDE0",
