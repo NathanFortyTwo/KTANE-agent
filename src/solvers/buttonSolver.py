@@ -16,6 +16,10 @@ class ButtonActions(Enum):
 class SimpleWire(BaseSolver):
     """returns the INDEX of the wire to cut, starting at 0"""
 
+    def __init__(self, config):
+        super().__init__(config)
+        self.validate_input()
+
     def validate_input(self):
         super().validate_input()
         color = self.input.get("color")
@@ -54,7 +58,3 @@ class SimpleWire(BaseSolver):
             return {"Action": ButtonActions.QUICKTAP}
 
         return {"Action": ButtonActions.MAINTAIN}
-
-    def __init__(self, config):
-        super().__init__(config)
-        self.validate_input()

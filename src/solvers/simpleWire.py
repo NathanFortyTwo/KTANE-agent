@@ -7,6 +7,10 @@ MAX_WIRES = 6
 class SimpleWire(BaseSolver):
     """returns the INDEX of the wire to cut, starting at 0"""
 
+    def __init__(self, config):
+        super().__init__(config)
+        self.validate_input()
+
     def validate_input(self):
         super().validate_input()
 
@@ -97,7 +101,3 @@ class SimpleWire(BaseSolver):
             return 5
 
         return 3
-
-    def __init__(self, config):
-        super().__init__(config)
-        self.validate_input()
