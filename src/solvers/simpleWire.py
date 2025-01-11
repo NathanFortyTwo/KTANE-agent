@@ -47,7 +47,7 @@ class SimpleWire(BaseSolver):
         return 2
 
     def solve_4_wires(self):
-        last_series_digit = int(self.config["bomb_config"]["series_number"])
+        last_series_digit = int(self.config["series_number"])
 
         # more than one red && last digit odd
         if self.input.count(Color.RED) > 1 and (last_series_digit % 2 == 1):
@@ -71,7 +71,7 @@ class SimpleWire(BaseSolver):
         return 1
 
     def solve_5_wires(self):
-        last_series_digit = int(self.config["bomb_config"]["series_number"])
+        last_series_digit = int(self.config["series_number"])
 
         if self.input[-1] == Color.BLACK and (last_series_digit % 2 == 1):
             return 3
