@@ -1,5 +1,5 @@
-from solvers.simpleWire import SimpleWire, Color
-from solvers.baseSolver import DEFAULT_BOMB_CONFIG
+from solvers.simple_wire import SimpleWire, Color
+from solvers.base_solver import DEFAULT_BOMB_CONFIG
 import pytest
 
 

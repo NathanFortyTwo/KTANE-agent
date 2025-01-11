@@ -1,4 +1,4 @@
-from solvers.baseSolver import BaseSolver
+from solvers.base_solver import BaseSolver
 from constants import Color, InvalidInputException, MIN_SIMPLE_WIRES, MAX_SIMPLE_WIRES
 
 

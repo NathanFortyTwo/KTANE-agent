@@ -1,9 +1,8 @@
-from enum import Enum
-from solvers.baseSolver import BaseSolver
+from solvers.base_solver import BaseSolver
 from constants import Color, InvalidInputException, FRButtonText, ButtonActions
 
 
-class SimpleWire(BaseSolver):
+class Button(BaseSolver):
     """returns the INDEX of the wire to cut, starting at 0"""
 
     def __init__(self, config):
