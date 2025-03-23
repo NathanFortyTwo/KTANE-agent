@@ -52,6 +52,7 @@ class FRButtonText(Enum):
 class ButtonActions(Enum):
     QUICKTAP = "QUICKTAP"
     MAINTAIN = "MAINTAIN"
+    RELEASE = "RELEASE"
 
 
 MIN_SIMPLE_WIRES = 3
