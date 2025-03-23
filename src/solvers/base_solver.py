@@ -2,9 +2,9 @@ from constants import InvalidInputException
 
 DEFAULT_BOMB_CONFIG = {
     "series_number": "ABCDE0",
-    "battery_number": 0,
-    "CAR": False,
-    "FRK": False,
+    "batteries": 0,
+    "CAR": None,
+    "FRK": None,
 }
 
 
