@@ -5,6 +5,7 @@ DEFAULT_BOMB_CONFIG = {
     "batteries": 0,
     "CAR": None,
     "FRK": None,
+    "parallel_port_count": 0,
 }
 
 
