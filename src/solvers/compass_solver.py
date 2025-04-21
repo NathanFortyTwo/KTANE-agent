@@ -10,27 +10,28 @@ class Compass(BaseSolver):
 
     def __init__(self, config):
         super().__init__(config)
-        self.validate_input()
 
         self.patterns = {
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",
 
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",                        
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",                        
 
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",
                         
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",
                         
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",
                         
-                        [True, True, True, True, True, True,
-                        True, True, True, True, True, True]:"NORTH",
+                        (True, True, True, True, True, True,
+                        True, True, True, True, True, True):"NORTH",
                         } 
+        self.validate_input()
+
         
 
     def validate_input(self):
