@@ -26,9 +26,7 @@ class Keyboard(BaseSolver):
                 filter(lambda candidate: is_in(candidate, symbol), candidates)
             )
         if len(candidates) != 1:
-            raise Exception(
-                "Illegal wire count [ERROR: should have been caught earlier]"
-            )
+            raise Exception("No candidate left, something went wrong...")
         self.candidate = candidates[0]
 
         self.input.sort(key=self.key)
