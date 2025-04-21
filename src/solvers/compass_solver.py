@@ -12,24 +12,31 @@ class Compass(BaseSolver):
         super().__init__(config)
 
         self.patterns = {
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",
+                        ("O", "O", "X", "O", "X", "X",
+                         "X", "X", "X", "X", "O", "X"):"NORTH",
 
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",                        
+                        ("X", "O", "X", "O", "X", "O",
+                         "O", "X", "X", "O", "X", "X"):"NORTH",
 
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",
-                        
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",
-                        
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",
-                        
-                        (True, True, True, True, True, True,
-                        True, True, True, True, True, True):"NORTH",
+                        ("O", "X", "X", "O", "O", "X",
+                         "X", "X", "X", "X", "O", "X"):"SOUTH",
+
+                        ("X", "O", "X", "O", "X", "O",
+                         "O", "X", "O", "O", "O", "X"):"SOUTH",
+
+                        ("O", "O", "O", "O", "X", "O",
+                         "X", "O", "O", "X", "X", "X"):"WEST",  
+                          
+                        ("O", "O", "O", "O", "X", "O",
+                         "O", "O", "O", "X", "X", "O"):"WEST",
+
+                        ("X", "O", "X", "X", "X", "X",
+                         "X", "X", "X", "O", "X", "O"):"EAST",
+
+                        ("X", "O", "X", "X", "O", "O",
+                         "X", "X", "X", "O", "X", "O"):"EAST",
                         } 
+
         self.validate_input()
 
         
